@@ -18,7 +18,6 @@ body {
     width: 100% !important;
     box-sizing: border-box;
     font-family: $font-default;
-    overflow: hidden;
 }
 
 .backRight {
@@ -27,7 +26,6 @@ body {
     width: 50%;
     height: 100%;
     background: $theme-signup;
-    overflow: hidden;
 }
 
 .backLeft {
@@ -36,7 +34,6 @@ body {
     width: 50%;
     height: 100%;
     background: $theme-login;
-    overflow: hidden;
 }
 
 #back {
@@ -44,7 +41,6 @@ body {
     height: 100%;
     position: absolute;
     z-index: -999;
-    overflow: hidden;
 }
 
 .canvas-back {
@@ -54,7 +50,6 @@ body {
     width: 100%;
     height: 100%;
     z-index: 10;
-    overflow: hidden;
 }
 
 #slideBox {
@@ -65,7 +60,6 @@ body {
     margin-left: 50%;
     position: absolute;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    overflow: hidden;
 }
 
 .topLayer {
@@ -73,13 +67,11 @@ body {
     height: 100%;
     position: relative;
     left: 0;
-    overflow: hidden;
     left: -100%;
 }
 
 label {
     font-size: 0.8em;
-    overflow: hidden;
     text-transform: uppercase;
 }
 
@@ -88,7 +80,6 @@ input {
     border: 0;
     outline: 0;
     font-size: 1em;
-    overflow: hidden;
     padding: 8px 1px;
     margin-top: 0.1em;
 }
@@ -97,24 +88,20 @@ input {
     width: 50%;
     height: 100%;
     overflow: scroll;
-    overflow: hidden;
     background: $theme-signup-background;
     left: 0;
     position: absolute;
 
     label {
         color: $theme-light;
-        overflow: hidden;
     }
 
     input {
         border-bottom: 1px solid $theme-light;
         color: $theme-light;
-        overflow: hidden;
 
         &:focus, &:active {
             border-color: $theme-signup;
-            overflow: hidden;
             color: $theme-signup;
         }
 
@@ -135,7 +122,6 @@ input {
     overflow: scroll;
     background: $theme-login-background;
     right: 0;
-    overflow: hidden;
     position: absolute;
 
     label {
@@ -162,7 +148,6 @@ input {
     justify-content: center;
     min-height: 100%;
     width: 80%;
-    overflow: hidden;
     margin: 0 auto;
     position: relative;
 }
@@ -170,35 +155,32 @@ input {
 .content h2 {
     font-weight: 300;
     font-size: 2.6em;
-    overflow: hidden;
     margin: 0.2em 0 0.1em;
 }
 
 .left .content h2 {
-    overflow: hidden;
     color: $theme-signup;
 }
 
 .right .content h2 {
-  color: $theme-login;
+    color: $theme-login;
 }
 
 .form-element {
-  margin: 1.6em 0;
-  &.form-submit {
-    margin: 1.6em 0 0;
-  }
+    margin: 1.6em 0;
+
+    &.form-submit {
+        margin: 1.6em 0 0;
+    }
 }
 
 .form-stack {
     display: flex;
-    overflow: hidden;
     flex-direction: column;
 }
 
 .checkbox {
     -webkit-appearance: none;
-    overflow: hidden;
     outline: none;
     background-color: $theme-light;
     border: 1px solid $theme-light;
@@ -208,22 +190,21 @@ input {
     display: inline-block;
     position: relative;
 }
+
 .checkbox:focus, .checkbox:checked:focus,
 .checkbox:active, .checkbox:checked:active {
-    overflow: hidden;
     border-color: $theme-signup;
     box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 }
 
 .checkbox:checked {
-  outline: none;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    outline: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
 }
 
 .checkbox:checked:after {
     outline: none;
     content: '\2713';
-    overflow: hidden;
     color: $theme-signup;
     font-size: 1.4em;
     font-weight: 900;
@@ -235,11 +216,9 @@ input {
 .form-checkbox {
     display: flex;
     align-items: center;
-    overflow: hidden;
 
     label {
         margin: 0 6px 0;
-        overflow: hidden;
         font-size: 0.72em;
     }
 }
@@ -249,7 +228,6 @@ button {
     margin: 0 10px 0 0;
     width: auto;
     font-weight: 600;
-    overflow: hidden;
     text-transform: uppercase;
     font-size: 1em;
     color: #fff;
@@ -263,12 +241,10 @@ button {
 
     &.signup {
         background: $theme-signup;
-        overflow: hidden;
     }
 
     &.login {
         background: $theme-login;
-        overflow: hidden;
     }
 
     &.off {
@@ -287,22 +263,18 @@ button {
 }
 
 button:focus, button:active, button:hover {
-    overflow: hidden;
     box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
 
     &.signup {
         background: $theme-signup-darken;
-        overflow: hidden;
     }
 
     &.login {
-        overflow: hidden;
         background: $theme-login-darken;
     }
 
     &.off {
         box-shadow: none;
-        overflow: hidden;
 
         &.signup {
             color: $theme-signup;
@@ -317,11 +289,12 @@ button:focus, button:active, button:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  #slideBox {
-    width: 80%;
-    margin-left: 20%;
-  }
-  .signup-info, .login-info {
-    display: none;
-  }
+    #slideBox {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    .signup-info, .login-info {
+        display: none;
+    }
 }
