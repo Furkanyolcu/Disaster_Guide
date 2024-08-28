@@ -10,10 +10,8 @@
 <body>
     <div id="back">
         <canvas id="canvas" class="canvas-back"></canvas>
-        <div class="backRight">
-        </div>
-        <div class="backLeft">
-        </div>
+        <div class="backRight"></div>
+        <div class="backLeft"></div>
     </div>
 
     <div id="slideBox">
@@ -66,8 +64,14 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.3/paper-full.min.js"></script>
     <script src="~/dynamic single page login + sign up/main.js"></script>
+    <script>
+        document.getElementById('logIn').addEventListener('click', function () {
+            window.location.href = 'Home/FirstLogin';
+        });
+    </script>
 </body>
 </html>
