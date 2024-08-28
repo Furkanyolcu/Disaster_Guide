@@ -13,16 +13,15 @@ namespace Disaster_Guide.Controllers
 			_logger = logger;
 		}
 
-		public IActionResult Index()
+		public IActionResult Login()
 		{
 			return View();
 		}
-
-		public IActionResult Privacy()
-		{
-			return View();
-		}
-        public IActionResult FirstLogin()
+        public IActionResult Map()
+        {
+            return View();
+        }
+        public IActionResult HomePage()
         {
             return View();
         }
